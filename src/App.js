@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter} from 'react-router-dom';
+import Routes from './routes';
+import GlobalStyles from './globalStyles';
 
 export default function App() {
   return (
-    <div>
-      <h1>Task list</h1>
-    </div>
+    <BrowserRouter>
+      <Routes />
+      <GlobalStyles/>
+    </BrowserRouter>
   )
 }
